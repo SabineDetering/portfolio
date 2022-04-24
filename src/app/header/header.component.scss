@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        height: 54px;
+        margin: 20px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: var(--space-s);
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid transparent;
+            transition: all 125ms ease-in-out;
+
+            &:hover {
+                color: var(--primary);
+                border: 1px solid var(--primary);
+                transition: all 125ms ease-in-out;
+            }
+
+            .active {
+                color: var(--primary);
+            }
+        }
+    }
+
+}
