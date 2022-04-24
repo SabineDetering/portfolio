@@ -1,4 +1,10 @@
 header {
+    // position: fixed;
+    // z-index: 100;
+    top:0;
+    width: 100vw;
+    max-width: 100%;
+    background-color: black;padding: 0 var(--space-xxl);
     display: flex;
     justify-content: space-between;
     align-items: center;

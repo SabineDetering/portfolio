@@ -1,0 +1,14 @@
+.portfolio{
+    text-align: center;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+    margin-top:var(--space-xl);
+    gap:var(--space-s);
+    button{
+        // padding:var(--space-xs) var(--space-s);
+        width:150px;
+        height: 60px;
+    }
+}

@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { IntroComponent } from './intro/intro.component';
+import { SkillSectionComponent } from './skill-section/skill-section.component';
+import { SkillComponent } from './skill/skill.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { IntroComponent } from './intro/intro.component';
     FooterComponent,
     ImprintComponent,
     PrivacyComponent,
-    IntroComponent
+    IntroComponent,
+    SkillSectionComponent,
+    SkillComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

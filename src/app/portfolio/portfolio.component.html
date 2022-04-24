@@ -1,0 +1,8 @@
+<div class="portfolio bg-black">
+    <h2>My Portfolio</h2>
+    <div class="btn-group">
+        <button *ngFor="let type of types;let i=index;" class="btn-primary" [class.active]="type.active" (click)="activate(i)" >{{type.name}}</button>
+        
+    </div>
+
+</div>

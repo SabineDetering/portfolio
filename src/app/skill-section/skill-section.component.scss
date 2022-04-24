@@ -1,0 +1,11 @@
+.skill-section {
+text-align: center;
+}
+
+.tiles {
+    margin-top:var(--space-m);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-m)
+}
