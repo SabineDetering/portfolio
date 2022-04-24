@@ -1,14 +1,29 @@
-.portfolio{
+.portfolio {
     text-align: center;
 }
-.btn-group{
+
+.btn-group {
     display: flex;
     justify-content: center;
-    margin-top:var(--space-xl);
-    gap:var(--space-s);
-    button{
+    margin-top: var(--space-xl);
+    gap: var(--space-s);
+
+    button {
         // padding:var(--space-xs) var(--space-s);
-        width:150px;
+        width: 150px;
         height: 60px;
+        cursor: pointer;
     }
+
+    .active {
+        background-color: var(--primary);
+        color: white;
+    }
+}
+.projects {
+    margin-top: var(--space-m);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-m)
 }

@@ -1,8 +1,13 @@
 <div class="portfolio bg-black">
     <h2>My Portfolio</h2>
     <div class="btn-group">
-        <button *ngFor="let type of types;let i=index;" class="btn-primary" [class.active]="type.active" (click)="activate(i)" >{{type.name}}</button>
-        
+        <button *ngFor="let type of types;let i=index;" class="btn-primary" [class.active]="type.active"
+            (click)="activate(i)">{{type.name}}</button>
     </div>
-
-</div>
+    
+    <div class="projects">
+        <ng-container *ngFor="let project of projects;let i=index" >
+            <app-project *ngIf="meetsSearchCriteria(i)" [index]="i" [projects]="projects">
+            </app-project>
+        </ng-container>
+    </div>
