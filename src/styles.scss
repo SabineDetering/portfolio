@@ -27,13 +27,23 @@ body {
 
 h1 {
     font-size: 64px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 36px;
     font-weight: 500;
 }
+h3{
+    font-size: 24px;
+    font-weight: 500;
+    color:var(--primary);
+    margin-bottom:12px;
+}
+p{
+    margin-bottom:8px;
+}
+
 
 .plr-w {
     width: 100vw;
@@ -43,8 +53,8 @@ h2 {
 }
 
 .ptb{
-    padding-top: var(--space-m);
-    padding-bottom: var(--space-mr);
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
 }
 
 .bg-black {
