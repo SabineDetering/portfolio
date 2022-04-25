@@ -1,11 +1,14 @@
 .skill-section {
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tiles {
-    margin-top:var(--space-m);
+    margin-top: var(--space-m);
     display: flex;
+    max-width: 1080px;
     justify-content: center;
     flex-wrap: wrap;
-    gap: var(--space-m)
+    gap: var(--space-m);
 }

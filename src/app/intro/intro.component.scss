@@ -1,4 +1,5 @@
 .intro {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -7,8 +8,8 @@
     .text {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
-        left: var(--space-xxl);
+        transform: translateY(-80%);
+        left: var(--pd-lr);
         line-height: 1.7;
 
         button {
@@ -20,10 +21,19 @@
 
     img {
         min-width: 500px;
-        max-width: 40vw;
+        max-width: 60vw;
         height: calc(100vh - 98px);
         object-fit: cover;
+        // animation: zoomIn 2s ease-in-out;
     }
+
+    // @keyframes zoomIn {
+    //     from{transform: scale(0.7);}
+    //     to {
+    //         transform: scale(1);
+    //     }
+        
+    // }
 }
 
 .arrow-btn {

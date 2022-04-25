@@ -1,1 +1,7 @@
-<div>{{projects[index].name}}</div>
+<div class="project"  (mouseover)="hover=true" (mouseleave)="hover=false">
+    <img src="assets/img/{{ project.img }}" alt="">
+    <div class="project-info" *ngIf="hover">
+       <p class="title">{{ project.name }}</p> 
+        <p>{{ project.description }}</p>
+    </div>
+</div>

@@ -8,6 +8,7 @@
     --space-l: 54px;
     --space-xl: 60px;
     --space-xxl: 105px;
+    --pd-lr: 15vw;
 }
 
 * {
@@ -34,18 +35,24 @@ h2 {
     font-weight: 500;
 }
 
-.bg-black {
+.plr-w {
     width: 100vw;
     max-width: 100%;
+    padding-left: var(--pd-lr);
+    padding-right: var(--pd-lr);
+}
+
+.ptb{
+    padding-top: var(--space-m);
+    padding-bottom: var(--space-mr);
+}
+
+.bg-black {
     background-color: black;
-    padding: var(--space-xl) var(--space-xxl);
 }
 
 .bg-grey {
-    width: 100vw;
-    max-width: 100%;
     background-color: var(--grey);
-    padding: var(--space-xl) var(--space-xxl);
 }
 
 

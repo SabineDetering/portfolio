@@ -14,13 +14,49 @@ export class PortfolioComponent implements OnInit {
   ];
 
   public projects = [
-    { 'name': 'Quiz', 'type': 'JavaScript', 'img': '', 'description': 'Quiz App using Bootstrap', 'path': '' },
-    { 'name': 'Tic Tac Toe', 'type': 'JavaScript', 'img': '', 'description': '', 'path': '' },
-    { 'name': 'Pokédex', 'type': 'JavaScript', 'img': '', 'description': 'API', 'path': '' },
-    { 'name': 'Join', 'type': 'JavaScript', 'img': '', 'description': 'A Kanban board using Bootstrap', 'path': '' },
-    { 'name': 'Sharkie', 'type': 'JavaScript', 'img': '', 'description': 'Jump-and-Run-Game. Object-oriented.', 'path': '' },
-    { 'name': 'Ring of Fire', 'type': 'Angular', 'img': '', 'description': 'The popular drinking game as app. Using Angular and Firebase. Multi User', 'path': '' },
-    { 'name': 'CRM', 'type': 'Angular', 'img': '', 'description': '', 'path': ''}
+
+    {
+      'name': 'Ring of Fire',
+      'type': 'Angular',
+      'img': 'ringoffire.png',
+      'description': 'The popular drinking game as app. Using Angular and Firebase. Multi User',
+      'path': ''
+    },
+    {
+      'name': 'Sharkie',
+      'type': 'JavaScript',
+      'img': 'sharkie.png',
+      'description': 'Jump-and-Run-Game. Object-oriented.',
+      'path': ''
+    },
+    {
+      'name': 'Pokédex',
+      'type': 'JavaScript',
+      'img': 'pokedex.png',
+      'description': 'API',
+      'path': ''
+    },
+    {
+      'name': 'Join',
+      'type': 'JavaScript',
+      'img': 'join.png',
+      'description': 'A Kanban board using Bootstrap',
+      'path': ''
+    },
+    {
+      'name': 'Quiz',
+      'type': 'JavaScript',
+      'img': 'quiz.png',
+      'description': 'Quiz App using Bootstrap',
+      'path': ''
+    },
+    {
+      'name': 'Tic Tac Toe',
+      'type': 'JavaScript',
+      'img': 'tictactoe.png',
+      'description': '',
+      'path': ''
+    }
   ]
 
   constructor() { }
@@ -33,7 +69,7 @@ export class PortfolioComponent implements OnInit {
     for (let index = 0; index < this.types.length; index++) {
       this.types[index].active = (index == i);
     }
-     }
+  }
 
   meetsSearchCriteria(i: number) {
     let activeType = this.types.find(type => type.active);
