@@ -21,9 +21,11 @@
 
     img {
         min-width: 500px;
-        max-width: 60vw;
+        max-width: 40vw;
+        margin-right:-60px;
         height: calc(100vh - 107px);
-        object-fit: cover;
+        transform:translateY(10vh);
+        object-fit: contain;
         // animation: zoomIn 2s ease-in-out;
     }
 

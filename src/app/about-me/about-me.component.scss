@@ -15,6 +15,14 @@
 
         .profile-text {
             text-align: center;
+            max-width:400px;
+            h2{
+                font-weight: 900;                ;
+            }
         }
+    }
+    hr{
+        margin-top:var(--space-xl);
+        border-color:var(--secondary);
     }
 }
