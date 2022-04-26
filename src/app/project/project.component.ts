@@ -7,7 +7,7 @@ import { PortfolioComponent } from '../portfolio/portfolio.component';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
-  hover: boolean = true;
+  hover: boolean = false;
   // @Input() index: number;
   @Input() project: any;
   

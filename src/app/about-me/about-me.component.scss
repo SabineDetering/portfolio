@@ -1,0 +1,20 @@
+.about-me {
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-l);
+
+        img {
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+            border-radius: 100%;
+
+        }
+
+        .profile-text {
+            text-align: center;
+        }
+    }
+}
