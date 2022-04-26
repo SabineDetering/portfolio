@@ -8,6 +8,10 @@
         </div>
     </div>
     <hr>
-    <app-career-step *ngFor="let step in careerSteps"> </app-career-step>
+    <div class="career-step-wrapper">
+        <app-career-step *ngFor="let step of careerSteps;let i=index" [step]="step"
+            [style.--animation-delay]="i * 500 + 'ms'">
+        </app-career-step>
+    </div>
 
 </div>

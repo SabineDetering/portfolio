@@ -23,6 +23,13 @@
     }
     hr{
         margin-top:var(--space-xl);
+        margin-bottom:var(--space-xl);
         border-color:var(--secondary);
+    }
+    .career-step-wrapper{
+        display: flex;
+        justify-content: space-between;
+        // gap:var(--space-l);
+        width:100%;
     }
 }

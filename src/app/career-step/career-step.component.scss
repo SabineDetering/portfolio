@@ -1,0 +1,41 @@
+.career-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: var(--space-s);
+    margin-right: var(--space-s);
+    // width: 25%;
+
+    animation: fly-in 1000ms ease-in-out var(--animation-delay) forwards;
+
+    img {
+        background-color: var(--secondary);
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        padding: var(--space-s);
+    }
+
+    .title {
+        font-weight: bold;
+        margin-top: var(--space-s);
+        width: 100%;
+        text-align: center;
+    }
+
+    .description {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@keyframes fly-in {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

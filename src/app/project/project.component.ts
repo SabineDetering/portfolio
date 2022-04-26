@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PortfolioComponent } from '../portfolio/portfolio.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-project',
@@ -12,9 +12,13 @@ export class ProjectComponent implements OnInit {
   @Input() project: any;
   
   
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  openLink(path){
+    window.open(path,'_blank');
   }
 
 }

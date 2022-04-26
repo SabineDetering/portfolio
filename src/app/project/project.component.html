@@ -6,6 +6,6 @@
             <p>{{ project.description1 }}</p>
             <p>{{ project.description2 }}</p>
         </div>
-        <button routerLink="/{{ project.path }}" class="btn-primary">Try</button>
+        <button (click)="openLink(project.path)" class="btn-primary">Try</button>
     </div>
 </div>
