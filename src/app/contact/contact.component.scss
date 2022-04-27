@@ -1,3 +1,15 @@
 :host{
     display:block;
+    .highlight{
+        font-size:64px;
+        font-weight: 800;
+        color: var(--secondary);
+    }
+    a{
+        color:var(--secondary);
+        text-decoration: none;
+        &:hover{
+            color:#2dfcd8d4;
+        }
+    }   
 }

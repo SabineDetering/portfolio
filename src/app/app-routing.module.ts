@@ -6,7 +6,7 @@ import { PrivacyNoticeComponent } from './privacy-notice/privacy-notice.componen
 
 const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'imprint', component: LegalNoticeComponent },
+  { path: 'impressum', component: LegalNoticeComponent },
   { path: 'privacy', component: PrivacyNoticeComponent },
 ];
 
