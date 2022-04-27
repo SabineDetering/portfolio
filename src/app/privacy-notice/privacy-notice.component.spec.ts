@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImprintComponent } from './imprint.component';
+import { PrivacyNoticeComponent } from './privacy-notice.component';
 
-describe('ImprintComponent', () => {
-  let component: ImprintComponent;
-  let fixture: ComponentFixture<ImprintComponent>;
+describe('PrivacyNoticeComponent', () => {
+  let component: PrivacyNoticeComponent;
+  let fixture: ComponentFixture<PrivacyNoticeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImprintComponent ]
+      declarations: [ PrivacyNoticeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ImprintComponent);
+    fixture = TestBed.createComponent(PrivacyNoticeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

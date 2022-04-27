@@ -11,17 +11,17 @@ export class AboutMeComponent implements OnInit {
   {
     'img': 'walk.png',
     'title': 'My Journey Began',
-    'description': 'By studying Business Mathematics I layed a strong foundation in analytical thinking and built a first project programming Artificiel Intelligence.'
+    'description': 'Studying Business Mathematics boosted my talent for structured and analytical thinking. I built a first project solving a problem with Artificiel Intelligence.'
   },
   {
     'img': 'heart.png',
     'title': 'My Passion',
-    'description': 'During my career in the banking industry I enjoyed the time programming data analyses and automating reporting processes.'
+    'description': 'During my career in the banking industry I enjoyed programming data analyses and automating reporting processes.'
   },
   {
     'img': 'search.png',
     'title': 'My Search',
-    'description': 'Working as a freelance math teacher I was looking for new challenges in software development.I got professional training as Frontend Developer and coded several websites and apps, alone and in a team. '
+    'description': 'Working as a freelance math teacher I was looking for new challenges in software development. I got professional training as Frontend Developer and coded several websites and apps, alone and in a team. '
   },
   {
     'img': 'takeoff.png',

@@ -1,11 +1,11 @@
-.career-step {
+:host {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-left: var(--space-s);
     margin-right: var(--space-s);
-    // width: 25%;
+     width: 25%;
 
     animation: fly-in 1000ms ease-in-out var(--animation-delay) forwards;
 

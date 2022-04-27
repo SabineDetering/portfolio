@@ -1,4 +1,4 @@
-.intro {
+:host {
     position: relative;
     display: flex;
     align-items: center;
@@ -19,12 +19,12 @@
         }
     }
 
-    img {
+    .laptop {
         min-width: 500px;
         max-width: 40vw;
-        margin-right:-60px;
-        height: calc(100vh - 107px);
-        transform:translateY(10vh);
+        margin-right: -60px;
+        // height: calc(100vh - 107px);
+        transform: translateY(10vh);
         object-fit: contain;
         // animation: zoomIn 2s ease-in-out;
     }
@@ -34,15 +34,12 @@
     //     to {
     //         transform: scale(1);
     //     }
-        
+
     // }
 }
-
 .arrow-btn {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     left: 50%;
     transform: translatex(-50%);
-    width: 64px;
-    height: 64px;
 }

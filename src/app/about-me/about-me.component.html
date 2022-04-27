@@ -1,17 +1,14 @@
-<div id="about-me" class="about-me bg-grey plr-w ptb">
-    <div class="profile">
-        <img src="assets/img/profile-pic.jpg" alt="">
-        <div class="profile-text">
-            <h2>About me.</h2>
-            <p>"I'm a dog enthusiast and frontend developer with a passion for structuring problems and logical
-                approaches."</p>
-        </div>
+<div class="profile">
+    <img src="assets/img/profile-pic.jpg" alt="">
+    <div class="profile-text">
+        <h2>About me.</h2>
+        <p>"I'm a dog enthusiast and frontend developer with a passion for structuring problems and logical
+            approaches."</p>
     </div>
-    <hr>
-    <div class="career-step-wrapper">
-        <app-career-step *ngFor="let step of careerSteps;let i=index" [step]="step"
-            [style.--animation-delay]="i * 500 + 'ms'">
-        </app-career-step>
-    </div>
-
+</div>
+<hr>
+<div class="career-step-wrapper">
+    <app-career-step *ngFor="let step of careerSteps;let i=index" [step]="step"
+        [style.--animation-delay]="i * 500 + 'ms'">
+    </app-career-step>
 </div>

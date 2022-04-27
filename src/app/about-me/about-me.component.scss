@@ -1,4 +1,5 @@
-.about-me {
+:host {
+    display: block;
     .profile {
         display: flex;
         justify-content: center;
