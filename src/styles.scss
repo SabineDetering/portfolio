@@ -2,7 +2,7 @@
     --primary: #Fa2759;
     --secondary: #2Dfcd8;
     --grey: #1e1e1e;
-    --lightgrey:#b3b3b3;
+    --lightgrey: #8c8c8c;
     --space-xs: 12px;
     --space-s: 24px;
     --space-m: 40px;
@@ -84,27 +84,24 @@ button {
 .btn-primary {
     color: var(--primary);
     border: 2px solid var(--primary);
-    
-
-    &:hover {
-        background-color: var(--primary) !important;
-        color: white;
-    }
-}
+   }
 
 .btn-secondary {
     color: var(--secondary);
     border: 2px solid var(--secondary);
     cursor: pointer;
+    transition: 0.2s;
 
     &:hover {
-        background-color: var(--secondary);
         color: black;
-        animation: name duration timing-function delay iteration-count direction fill-mode;
+        box-shadow: inset 0 0 0 2em var(--secondary);
+        transition: 0.2s;
     }
 }
-@keyframes button-ripple{
-    0%{}
+
+
+@keyframes button-ripple {
+    0% {}
 }
 
 
