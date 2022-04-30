@@ -1,9 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, group, query, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-skill-section',
   templateUrl: './skill-section.component.html',
-  styleUrls: ['./skill-section.component.scss']
+  styleUrls: ['./skill-section.component.scss'],
+  animations: [
+    trigger('shiftFadeInAnimation', [
+      transition(':enter', [
+        style({ opacity: '0', transform: 'translateY(100%)'  }),
+        group([
+          animate(500, style({ opacity: '1' })),
+          animate(125, style({ transform: 'translateY(0%)' }))
+        ])
+      ])
+    ])
+  ]
 })
 export class SkillSectionComponent implements OnInit {
   skills = [

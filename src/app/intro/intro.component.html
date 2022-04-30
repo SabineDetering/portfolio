@@ -1,10 +1,22 @@
-<div class="intro  ">
-    <div class="text">
+
+    <div class="text" [@entry]="'true'">
         <h1>Hi,<br>
-            I'm <span style="color:var(--primary);">Sabine</span> Detering,<br>
-            Web Dev<span style="color:var(--secondary);">e</span>loper</h1>
-        <button href="#contact" class="btn-secondary">Contact me</button>
+            <div>
+                I'm
+                <div class="highlight-wrapper">
+                    <span class="highlight"></span>
+                    <span class="changecolor">Sabine</span>
+                </div>
+                Detering,
+            </div>
+            <div>
+                <span>Web Dev</span>
+                <div class="insert">e</div>
+                <span class="right-from-insert">loper</span>
+            </div>
+        </h1>
+        <button href="#contact" class="contact-btn btn-secondary">Contact me</button>
     </div>
     <img class="laptop" src="assets/img/laptop.jpg" alt="">
-</div>
-<a class="arrow-btn" href="#skills"><img src="assets/img/arrow.png" alt=""></a>
+
+<a class="arrow-btn" [@arrowAnimation]="'true'" href="#skills"><img src="assets/img/arrow.png" alt=""></a>

@@ -1,15 +1,38 @@
-:host{
-    display:block;
-    .highlight{
-        font-size:64px;
+:host {
+    display: flex;
+    justify-content: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highlight {
+        font-size: 64px;
         font-weight: 800;
         color: var(--secondary);
     }
-    a{
-        color:var(--secondary);
+a {
+    color: var(--secondary);
         text-decoration: none;
-        &:hover{
-            color:#2dfcd8d4;
+&:hover {
+    color: #2dfcd8d4;
         }
-    }   
+    }
+    textarea {
+        resize: none;
+        height: 150px;
+    }
+    
+    }
+    
+    .full-w {
+        width: 100%;
+        max-width: 640px;
+    }
+    
+    button {
+        width: 150px;
+        height: 60px;
+        align-self: flex-end;
 }

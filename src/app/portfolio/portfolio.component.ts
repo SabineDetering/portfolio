@@ -27,7 +27,7 @@ export class PortfolioComponent implements OnInit {
       'name': 'Sharkie',
       'type': 'JavaScript',
       'img': 'sharkie.png',
-      'description1': 'Object-oriented Jump-and-Run-Game based on JavaScript.',
+      'description1': 'Object-oriented jump-and-run-game based on JavaScript.',
       'description2': 'Sharkie is a friendly shark, but to survive he must evade or fight his enemies. ',
       'path': 'http://sabine-detering.developerakademie.net/Sharkie/index.html'
     },
@@ -35,7 +35,7 @@ export class PortfolioComponent implements OnInit {
       'name': 'Pokédex',
       'type': 'JavaScript',
       'img': 'pokedex.png',
-      'description1': 'Based on Javascript and an API(REST).',
+      'description1': 'Based on Javascript and a RESTful API.',
       'description2': 'The user gets information on selected properties of his favorite (or all) pokémon.',
       'path': 'http://sabine-detering.developerakademie.net/pokedex/index.html'
     },

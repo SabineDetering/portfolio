@@ -1,5 +1,5 @@
 <h2>My Skills</h2>
 <div class="tiles">
-    <app-skill *ngFor="let skill of skills" [skill]="skill">
+    <app-skill [@shiftFadeInAnimation]="'true'" *ngFor="let skill of skills" [skill]="skill">
     </app-skill>
 </div>

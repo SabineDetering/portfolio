@@ -24,6 +24,11 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  submitted = false;
+
+  onSubmit() { this.submitted = true; }
+
   sendMessage(value){}
 
 }

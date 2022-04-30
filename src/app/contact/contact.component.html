@@ -1,18 +1,35 @@
+<div class="contact-wrapper">
     <h2 class="highlight">Contact me.</h2>
-    <p>Get in touch via the form below, or by emailing <a href="mailto:sabine.detering@web.de">sabine.detering@web.de</a>.</p>
+    <p>Get in touch via the form below, or by emailing <a
+            href="mailto:sabine.detering@web.de">sabine.detering@web.de</a>.
+    </p><br>
     <form novalidate (ngSubmit)="sendMessage(form.value)" #form="ngForm">
 
-        <p>
-            <mat-form-field appearance="fill" class="form-group">
+        <div>
+            <mat-form-field appearance="fill" class="form-group full-w">
                 <mat-label>Name</mat-label>
-                <input matInput type="text" class="form-control" name="name" ngModel required>
+                <input matInput type="text" class="form-control" name="name" ngModel required #name="ngModel">
+                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    Please enter your name
+                </div>
             </mat-form-field>
-        </p>
-        <p>
-            <mat-form-field appearance="fill" class="form-group">
-                <mat-label>Email</mat-label>
+        </div>
+        <div>
+            <mat-form-field appearance="fill" class="form-group full-w">
+                <mat-label>Email address</mat-label>
                 <input matInput type="email" class="form-control" name="email" ngModel required>
             </mat-form-field>
-        </p>
-        <button type="submit" [disabled]="!form.valid">Send</button>
+        </div>
+        <div>
+            <mat-form-field appearance="fill" class="form-group full-w">
+                <mat-label>Message</mat-label>
+                <textarea matInput type="text" class="form-control" name="message" ngModel required>
+            </textarea>
+            </mat-form-field>
+        </div><button class="btn-secondary" type="submit" [disabled]="!form.valid">Send</button>
+        <div>
+           
+        </div>
+        <!-- action="http://gruppe-175.developerakademie.net/05-kochwelt/send_mail.php" method="POST" -->
     </form>
+</div>

@@ -1,7 +1,8 @@
 :root {
     --primary: #Fa2759;
     --secondary: #2Dfcd8;
-    --grey: #1a1a1a;
+    --grey: #1e1e1e;
+    --lightgrey:#b3b3b3;
     --space-xs: 12px;
     --space-s: 24px;
     --space-m: 40px;
@@ -68,8 +69,8 @@ p {
     background-color: var(--grey);
 }
 
-.bg-white {
-    background-color: white;
+.bg-lightgrey {
+    background-color: var(--lightgrey);
 }
 
 
@@ -83,6 +84,7 @@ button {
 .btn-primary {
     color: var(--primary);
     border: 2px solid var(--primary);
+    
 
     &:hover {
         background-color: var(--primary) !important;
@@ -97,8 +99,12 @@ button {
 
     &:hover {
         background-color: var(--secondary);
-        color: white;
+        color: black;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
     }
+}
+@keyframes button-ripple{
+    0%{}
 }
 
 
