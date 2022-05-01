@@ -28,7 +28,8 @@
         <div>
             <mat-form-field appearance="fill" class="form-group full-w">
                 <mat-label>Message</mat-label>
-                <textarea matInput minlength="4" class="form-control" name="message" [ngModel]="message" required cdkTextareaAutosize>
+                <textarea matInput minlength="4" class="form-control" 
+                name="message" (ngModel)="message" #message="ngModel"  required cdkTextareaAutosize>
             </textarea>
                 <!-- <mat-error *ngIf="message.empty && (message.dirty || message.touched)"> -->
                 <!-- Please enter your message -->

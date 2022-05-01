@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Form, FormBuilder } from '@angular/forms';
-import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { FormControl, FormGroupDirective, NgForm } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
-import { HttpClient } from '@angular/common/http';
+import { SendMailService } from '../services/send-mail.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
 /** Error when invalid control is dirty, touched, or submitted. */
@@ -20,24 +20,34 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 })
 export class ContactComponent implements OnInit {
 
-  message: string;
+  // message: string;
 
-
-  constructor(private http: HttpClient) { }
+constructor(private http:HttpClient){}
+  // constructor(private sendMail:SendMailService) { }
   // constructor() { }
 
   ngOnInit(): void {
   }
 
+  // submitForm(formResult:any) {
+  //   this.sendMail.send(formResult.name,formResult.email,formResult.message)
+  //     .subscribe(
+  //       (success: any) => { console.log('success',success); },
+  //       (error: any) => { console.log('error',error); }
+  //     );
+  // }
+
 
   sendMessage(formResult) {
     this.http
-      // .post('https://sabine.detering.developerakademie.net/portfolio/send_mail.php', {
-      .post('/portfolio/send_mail.php', {
+      .post('http://sabine-detering.developerakademie.net/portfolio/send_mail.php',
+        {
         name: formResult.name,
-        email: formResult.email,
+        // email: formResult.email,
         message: formResult.message,
-      })
+        }
+        // formResult
+      )
       .subscribe(
         (success: any) => {
           console.log('success');
@@ -47,7 +57,7 @@ export class ContactComponent implements OnInit {
         },
         (error: any) => {
           // this.openDialog(false);
-          console.log('error');
+          console.log('error', error);
         }
       );
   }
