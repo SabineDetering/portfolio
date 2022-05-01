@@ -35,10 +35,12 @@
 }
 
 [data-aos="staggered-slide-left"]{
-    transform:translateX(100vw);
-    transition-property: transform;
+    transform:translateX(15vw);
+    opacity: 0;
+    transition-property: transform,opacity;
     transition-delay: var(--animation-delay);
     &.aos-animate{
         transform:translateX(00);
+        opacity:1;
     }
 }
