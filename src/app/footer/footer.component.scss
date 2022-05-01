@@ -4,12 +4,23 @@
     align-items: center;
 
     .logo {
-        height: 60px;
+        height: 70px;
+        padding:5px;
+        &:hover {
+            background-color: var(--grey);
+            border-radius: 10px;
+        }
     }
 
     .social {
         display: flex;
         gap: var(--space-xs);
+        img{
+            &:hover{
+                background-color:var(--secondary);
+                border-radius: 10px;
+            }
+        }
     }
 
     .legal {

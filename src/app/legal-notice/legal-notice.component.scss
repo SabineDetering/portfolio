@@ -1,0 +1,8 @@
+a {
+    color: var(--secondary);
+    text-decoration: none;
+
+    &:hover {
+        color: #2dfcd8d4;
+    }
+}

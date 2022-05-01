@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { PrivacyNoticeComponent } from './privacy-notice/privacy-notice.component';
 import { TextFieldModule } from '@angular/cdk/text-field';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { TextFieldModule } from '@angular/cdk/text-field';
     FormsModule,
     MatInputModule,
     BrowserAnimationsModule,
-    TextFieldModule
+    TextFieldModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

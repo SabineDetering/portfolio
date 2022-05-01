@@ -23,31 +23,32 @@ export class ContactComponent implements OnInit {
   message: string;
 
 
-  // constructor(private http: HttpClient) { }
-  constructor() { }
+  constructor(private http: HttpClient) { }
+  // constructor() { }
 
   ngOnInit(): void {
   }
 
 
   sendMessage(formResult) {
-  //   this.http
-  //     .post('https://sabine.detering.developerakademie.net/portfolio/send_mail.php', {
-  //       name: formResult.name,
-  //       email: formResult.email,
-  //       message: formResult.message,
-  //     })
-  //     .subscribe(
-  //       (success: any) => {
-  //         console.log('success');
-  //         // this.openDialog(true);
-  //         // this.contactForm.reset();
-  //         // formDirective.resetForm();
-  //       },
-  //       (error: any) => {
-  //         // this.openDialog(false);
-  //         console.log('error');
-  //       }
-  //     );
+    this.http
+      // .post('https://sabine.detering.developerakademie.net/portfolio/send_mail.php', {
+      .post('/portfolio/send_mail.php', {
+        name: formResult.name,
+        email: formResult.email,
+        message: formResult.message,
+      })
+      .subscribe(
+        (success: any) => {
+          console.log('success');
+          // this.openDialog(true);
+          // this.contactForm.reset();
+          // formDirective.resetForm();
+        },
+        (error: any) => {
+          // this.openDialog(false);
+          console.log('error');
+        }
+      );
   }
 }
