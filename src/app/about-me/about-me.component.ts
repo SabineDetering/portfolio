@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about-me',
@@ -21,12 +21,12 @@ export class AboutMeComponent implements OnInit {
   {
     'img': 'search.png',
     'title': 'My Search',
-    'description': 'Working as a freelance math teacher I was looking for new challenges in software development. I got professional training as Frontend Developer and coded several websites and apps, alone and in a team. '
+    'description': 'Looking for new challenges in software development, I got professional training as Frontend Developer. At Developer Akademie I coded several websites and apps, alone and in a team. '
   },
   {
     'img': 'takeoff.png',
     'title': 'New Challenges',
-    'description': 'Now I am looking for an opportunity as junior developer to build on my experience and continue learning. '
+    'description': 'Now I am looking for an opportunity as junior developer to build on my experience with JavaScript, HTML/CSS and Angular, and continue learning. '
   }
 ]
 

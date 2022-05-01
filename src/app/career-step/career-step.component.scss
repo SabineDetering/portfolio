@@ -7,7 +7,7 @@
     margin-right: var(--space-s);
      width: 25%;
 
-    animation: fly-in 1000ms ease-in-out var(--animation-delay) forwards;
+    // animation: fly-in 1000ms ease-in-out var(--animation-delay) forwards;
 
     img {
         background-color: var(--secondary);
@@ -30,12 +30,12 @@
     }
 }
 
-@keyframes fly-in {
-    from {
-        transform: translateX(100vw);
-    }
+// @keyframes fly-in {
+//     from {
+//         transform: translateX(100vw);
+//     }
 
-    to {
-        transform: translateX(0);
-    }
-}
+//     to {
+//         transform: translateX(0);
+//     }
+// }

@@ -2,11 +2,6 @@
     display: flex;
     justify-content: center;
 
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
     .highlight {
         font-size: 64px;
         font-weight: 800;
@@ -22,9 +17,51 @@
         }
     }
 
-    textarea {
-        resize: none;
-        height: 150px;
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+
+        &::ng-deep {
+            .mat-focused {
+
+                .mat-form-field-ripple {
+                    /*change color of underline when focused*/
+                    background-color: var(--secondary) !important;
+                }
+
+                .mat-form-field-label {
+                    /*change color of label when focused*/
+                    color: var(--secondary) !important;
+                }
+            }
+
+            .mat-form-field-underline {
+                background-color: var(--secondary) !important;
+            }
+        }
+
+        textarea {
+            resize: none;
+            height: 150px;
+        }
+    }
+
+
+
+    .mat-focused .mat-form-field-label {
+        /*change color of label*/
+        color: white !important;
+    }
+
+    .mat-form-field-underline {
+        /*change color of underline*/
+        background-color: white !important;
+    }
+
+    .mat-form-field-ripple {
+        /*change color of underline when focused*/
+        background-color: var(--secondary) !important;
+        ;
     }
 
 }

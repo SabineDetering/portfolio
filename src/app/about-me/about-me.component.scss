@@ -30,7 +30,15 @@
     .career-step-wrapper{
         display: flex;
         justify-content: space-between;
-        // gap:var(--space-l);
         width:100%;
+    }
+}
+
+[data-aos="staggered-slide-left"]{
+    transform:translateX(100vw);
+    transition-property: transform;
+    transition-delay: var(--animation-delay);
+    &.aos-animate{
+        transform:translateX(00);
     }
 }
