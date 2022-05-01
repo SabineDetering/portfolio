@@ -4,12 +4,11 @@
             href="mailto:sabine.detering@web.de">sabine.detering@web.de</a>.
     </p><br>
 
-    <form class="contact-form" novalidate (ngSubmit)="sendMessage(contactForm.value)" #contactForm="ngForm">
+    <form class="contact-form" novalidate (ngSubmit)="sendMessage(contactForm.value)" #contactForm="ngForm" >
         <div>
             <mat-form-field appearance="fill" class="form-group full-w">
                 <mat-label>Name</mat-label>
-                <input matInput minlength="3"  name="name" (ngModel)="name" required 
-                    #name="ngModel">
+                <input matInput minlength="3" name="name" (ngModel)="name" required #name="ngModel">
                 <mat-error *ngIf="name.invalid && (name.dirty || name.touched)">
                     Please enter your name
                 </mat-error>
@@ -18,8 +17,8 @@
         <div>
             <mat-form-field appearance="fill" class="form-group full-w">
                 <mat-label>Email address</mat-label>
-                <input matInput pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"  required (ngModel)="email"
-                    name="email" #email="ngModel" >
+                <input matInput pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required
+                    (ngModel)="email" name="email" #email="ngModel">
                 <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
                     Please enter a valid email address
                 </mat-error>
@@ -28,17 +27,24 @@
         <div>
             <mat-form-field appearance="fill" class="form-group full-w">
                 <mat-label>Message</mat-label>
-                <textarea matInput minlength="4" class="form-control" 
-                name="message" (ngModel)="message" #message="ngModel"  required cdkTextareaAutosize>
+                <textarea matInput minlength="4" class="form-control" name="message" (ngModel)="message"
+                    #message="ngModel" required cdkTextareaAutosize>
             </textarea>
                 <!-- <mat-error *ngIf="message.empty && (message.dirty || message.touched)"> -->
                 <!-- Please enter your message -->
-                <!-- </mat-error> --> 
+                <!-- </mat-error> -->
             </mat-form-field>
         </div>
-        <button class="btn-secondary" type="submit" [disabled]="!contactForm.valid">
-            Send
-        </button>
-        <!-- action="http://gruppe-175.developerakademie.net/05-kochwelt/send_mail.php" method="POST" -->
+        <div class="last-line full-w">
+            <span [class.hidden]="(mailSent=='notYet')" [ngClass]="mailSent">
+                {{ mailSent=='success'?'Thank you for your message!' :
+                'Message could not be sent. Please use your mail program.' }}
+            </span>
+
+            <button class="btn-secondary" type="submit" [disabled]="!contactForm.valid">
+                Send
+            </button>
+        </div>
+
     </form>
 </div>

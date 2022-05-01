@@ -10,7 +10,7 @@
     --space-xl: 60px;
     --space-xxl: 105px;
     --pd-lr: 15vw;
-    --animation-delay:0ms;
+    --animation-delay: 0ms;
 }
 
 * {
@@ -18,9 +18,14 @@
     margin: 0;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', Roboto, "Helvetica Neue", sans-serif;
     font-size: 20px;
     font-weight: regular;
     color: white;
@@ -85,7 +90,7 @@ button {
 .btn-primary {
     color: var(--primary);
     border: 2px solid var(--primary);
-   }
+}
 
 .btn-secondary {
     color: var(--secondary);
@@ -98,12 +103,14 @@ button {
         box-shadow: inset 0 0 0 2em var(--secondary);
         transition: 0.2s;
     }
-    &:disabled{
+
+    &:disabled {
         background-color: #99ffeec3;
         color: var(--lightgrey);
-        cursor:unset;
-        &:hover{
-            box-shadow:unset;
+        cursor: unset;
+
+        &:hover {
+            box-shadow: unset;
         }
     }
 }
@@ -122,13 +129,13 @@ button {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background:#555;
+    background: #555;
     border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background:var(--secondary);
+    background: var(--secondary);
 }
 
 
@@ -230,14 +237,4 @@ button {
         /* Safari, Android, iOS */
         url('assets/fonts/inter-v8-latin-800.svg#Inter') format('svg');
     /* Legacy iOS */
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
 }

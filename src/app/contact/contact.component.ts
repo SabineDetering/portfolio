@@ -20,9 +20,9 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 })
 export class ContactComponent implements OnInit {
 
-  // message: string;
+  public mailSent: string = 'notYet';
 
-constructor(private http:HttpClient){}
+  constructor(private http: HttpClient) { }
   // constructor(private sendMail:SendMailService) { }
   // constructor() { }
 
@@ -42,15 +42,16 @@ constructor(private http:HttpClient){}
     this.http
       .post('http://sabine-detering.developerakademie.net/portfolio/send_mail.php',
         {
-        name: formResult.name,
-        // email: formResult.email,
-        message: formResult.message,
+          name: formResult.name,
+          // email: formResult.email,
+          message: formResult.message,
         }
         // formResult
       )
       .subscribe(
         (success: any) => {
           console.log('success');
+          this.mailSent = 'success';
           // this.openDialog(true);
           // this.contactForm.reset();
           // formDirective.resetForm();
@@ -58,6 +59,7 @@ constructor(private http:HttpClient){}
         (error: any) => {
           // this.openDialog(false);
           console.log('error', error);
+          this.mailSent = 'error';
         }
       );
   }
