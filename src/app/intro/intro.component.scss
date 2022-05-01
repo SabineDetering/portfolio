@@ -7,7 +7,7 @@
 
     .text {
         position: absolute;
-        z-index:5;
+        z-index: 5;
         top: 50%;
         transform: translateY(-65%);
         left: var(--pd-lr);
@@ -40,7 +40,18 @@
         button {
             padding: 24px 120px;
             font-size: larger;
-            margin-top: var(--space-s);           
+            margin-top: var(--space-s);
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            &:hover {
+                a {
+                    color: black;
+                }
+            }
         }
     }
 
@@ -51,16 +62,8 @@
         // height: calc(100vh - 107px);
         transform: translateY(10vh);
         object-fit: contain;
-        // animation: zoomIn 2s ease-in-out;
     }
 
-    // @keyframes zoomIn {
-    //     from{transform: scale(0.7);}
-    //     to {
-    //         transform: scale(1);
-    //     }
-
-    // }
 }
 
 .arrow-btn {

@@ -20,6 +20,10 @@
     .contact-form {
         display: flex;
         flex-direction: column;
+        
+        mat-form-field{
+            background-color: var(--grey);
+        }
 
         &::ng-deep {
             .mat-focused {

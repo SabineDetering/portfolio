@@ -19,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { PrivacyNoticeComponent } from './privacy-notice/privacy-notice.component';
+import { TextFieldModule } from '@angular/cdk/text-field';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { PrivacyNoticeComponent } from './privacy-notice/privacy-notice.componen
     AppRoutingModule,
     FormsModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    TextFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
