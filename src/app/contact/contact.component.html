@@ -1,50 +1,47 @@
 <div class="contact-wrapper">
     <h2 class="highlight">Contact me.</h2>
-    <p>Get in touch via the form below, or by emailing <a
+
+    <p *ngIf="!mailSent">Get in touch via the form below, or by emailing <a
             href="mailto:sabine.detering@web.de">sabine.detering@web.de</a>.
     </p><br>
 
-    <form class="contact-form" novalidate (ngSubmit)="sendMessage(contactForm.value)" #contactForm="ngForm" >
+    <form *ngIf="!mailSent" class="contact-form" novalidate (ngSubmit)="submitForm(contactForm.value)"
+        #contactForm="ngForm">
         <div>
-            <mat-form-field appearance="fill" class="form-group full-w">
+            <mat-form-field appearance="outline" class="form-group full-w">
                 <mat-label>Name</mat-label>
-                <input matInput minlength="3" name="name" (ngModel)="name" required #name="ngModel">
+                <input matInput minlength="3" name="name" ngModel required #name="ngModel">
                 <mat-error *ngIf="name.invalid && (name.dirty || name.touched)">
                     Please enter your name
                 </mat-error>
             </mat-form-field>
         </div>
         <div>
-            <mat-form-field appearance="fill" class="form-group full-w">
+            <mat-form-field appearance="outline" class="form-group full-w">
                 <mat-label>Email address</mat-label>
-                <input matInput pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required
-                    (ngModel)="email" name="email" #email="ngModel">
+                <input matInput pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required ngModel
+                    name="email" #email="ngModel">
                 <mat-error *ngIf="email.invalid && (email.dirty || email.touched)">
                     Please enter a valid email address
                 </mat-error>
             </mat-form-field>
         </div>
         <div>
-            <mat-form-field appearance="fill" class="form-group full-w">
+            <mat-form-field appearance="outline" class="form-group full-w">
                 <mat-label>Message</mat-label>
-                <textarea matInput minlength="4" class="form-control" name="message" (ngModel)="message"
-                    #message="ngModel" required cdkTextareaAutosize>
+                <textarea matInput minlength="4" class="form-control" name="message" ngModel #message="ngModel" required
+                    cdkTextareaAutosize>
             </textarea>
-                <!-- <mat-error *ngIf="message.empty && (message.dirty || message.touched)"> -->
-                <!-- Please enter your message -->
-                <!-- </mat-error> -->
             </mat-form-field>
         </div>
-        <div class="last-line full-w">
-            <span [class.hidden]="(mailSent=='notYet')" [ngClass]="mailSent">
-                {{ mailSent=='success'?'Thank you for your message!' :
-                'Message could not be sent. Please use your mail program.' }}
-            </span>
 
-            <button class="btn-secondary" type="submit" [disabled]="!contactForm.valid">
-                Send
-            </button>
-        </div>
-
+        <button *ngIf="!mailSent" class="btn-secondary" type="submit"
+            [disabled]="contactForm.touched && !contactForm.valid">
+            Send
+        </button>
     </form>
+
+    <span *ngIf="mailSent" class="success full-w">
+        Thank you for your message!
+    </span>
 </div>

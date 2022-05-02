@@ -21,10 +21,7 @@
         display: flex;
         flex-direction: column;
 
-        mat-form-field {
-            background-color: var(--grey);
-        }
-
+       
         .mat-input-element {
             caret-color: var(--secondary) !important;
         }
@@ -41,11 +38,16 @@
                     /*change color of label when focused*/
                     color: var(--secondary) !important;
                 }
+
+                .mat-form-field-outline {
+                    color: var(--secondary) !important;
+                }
             }
 
             .mat-form-field-underline {
                 background-color: var(--secondary) !important;
             }
+
         }
 
         textarea {
@@ -53,7 +55,6 @@
             height: 150px;
         }
     }
-
 
 
     .mat-focused .mat-form-field-label {
@@ -66,33 +67,16 @@
         background-color: white !important;
     }
 
+    .mat-form-field-outline {
+        /*change color of underline*/
+        color: white !important;
+    }
+
     .mat-form-field-ripple {
         /*change color of underline when focused*/
         background-color: var(--secondary) !important;
+        color: var(--secondary) !important;
         ;
-    }
-
-}
-
-.full-w {
-    width: 100%;
-    max-width: 640px;
-}
-
-.last-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .hidden{
-        visibility: hidden;
-    }
-
-    .success {
-        color: var(--secondary);
-    }
-    .error {
-        color: var(--primary);
     }
 
     button {
@@ -106,4 +90,13 @@
             transition: 0.2s;
         }
     }
+}
+
+.full-w {
+    width: 100%;
+    max-width: 685px;
+}
+
+.success {
+    color: var(--secondary);
 }

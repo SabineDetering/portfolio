@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SendMailService {
 
-  private url = 'http://sabine.detering.developerakademie.net/portfolio/send_mail.php';
+  private url = 'http://sabine-detering.developerakademie.net/portfolio/send_mail.php';
 
   constructor(private http: HttpClient) {
   }
 
-  send(name,email,message): Observable<any> {
-    return this.http.post<any>(this.url, { 'name':name,'message':message });
+  send(contact) {
+    return this.http
+      .post(this.url, JSON.stringify(contact));
   }
 }

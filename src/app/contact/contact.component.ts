@@ -20,47 +20,52 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 })
 export class ContactComponent implements OnInit {
 
-  public mailSent: string = 'notYet';
+  public mailSent = false;
 
-  constructor(private http: HttpClient) { }
-  // constructor(private sendMail:SendMailService) { }
+  // constructor(private http: HttpClient) { }
+  constructor(private sendMail: SendMailService) { }
   // constructor() { }
 
   ngOnInit(): void {
   }
 
-  // submitForm(formResult:any) {
-  //   this.sendMail.send(formResult.name,formResult.email,formResult.message)
+  submitForm(formResult) {
+    console.log(formResult);
+    this.sendMail.send(formResult)
+      .subscribe({
+        next: (response) => console.log(response),
+        error: (error) => console.error(error),
+        complete: () => {
+          console.info('send post complete');
+          this.mailSent = true;
+        }
+      });
+  }
+
+
+  // sendMessage(formResult) {
+  //   this.http
+  //     .post('http://sabine-detering.developerakademie.net/portfolio/send_mail.php',
+  //       {
+  //         name: formResult.name,
+  //         // email: formResult.email,
+  //         message: formResult.message,
+  //       }
+  //       // formResult
+  //     )
   //     .subscribe(
-  //       (success: any) => { console.log('success',success); },
-  //       (error: any) => { console.log('error',error); }
+  //       (success: any) => {
+  //         console.log('success');
+  //         this.mailSent = 'success';
+  //         // this.openDialog(true);
+  //         // this.contactForm.reset();
+  //         // formDirective.resetForm();
+  //       },
+  //       (error: any) => {
+  //         // this.openDialog(false);
+  //         console.log('error', error);
+  //         this.mailSent = 'error';
+  //       }
   //     );
   // }
-
-
-  sendMessage(formResult) {
-    this.http
-      .post('http://sabine-detering.developerakademie.net/portfolio/send_mail.php',
-        {
-          name: formResult.name,
-          // email: formResult.email,
-          message: formResult.message,
-        }
-        // formResult
-      )
-      .subscribe(
-        (success: any) => {
-          console.log('success');
-          this.mailSent = 'success';
-          // this.openDialog(true);
-          // this.contactForm.reset();
-          // formDirective.resetForm();
-        },
-        (error: any) => {
-          // this.openDialog(false);
-          console.log('error', error);
-          this.mailSent = 'error';
-        }
-      );
-  }
 }
