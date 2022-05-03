@@ -1,7 +1,4 @@
 :host {
-    // position: fixed;
-    // z-index: 100;
-    top: 0;
     padding-top: var(--space-s);
     padding-bottom: var(--space-s);
     display: flex;
@@ -35,4 +32,9 @@
         }
     }
 
+    @media (max-width:600px) {
+        nav {
+            gap: 0;
+        }
+    }
 }

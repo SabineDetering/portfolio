@@ -72,7 +72,7 @@ hr {
 }
 
 [data-aos="staggered-slide-left"] {
-    transform: translateX(15vw);
+    transform: translateX(var(--pd-lr));
     opacity: 0;
     transition-property: transform, opacity;
     transition-delay: var(--animation-delay);
