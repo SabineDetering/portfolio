@@ -52,6 +52,15 @@ export class PortfolioComponent implements OnInit {
       'path': 'http://gruppe-194.developerakademie.net/Join/'
     },
     {
+      'name': 'Portfolio',
+      'type': 'Angular',
+      'img': 'portfolio.png',
+      'description1': 'This page was built with Angular.',
+      'description2': 'Get to know me and my projects.',
+      'description_short': 'This page was built with Angular.',
+      'path': 'http://sabine-detering.developerakademie.net/portfolio/index.html'
+    },
+    {
       'name': 'Quiz',
       'type': 'JavaScript',
       'img': 'quiz.png',

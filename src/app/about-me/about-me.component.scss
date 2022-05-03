@@ -81,4 +81,8 @@ hr {
         transform: translateX(00);
         opacity: 1;
     }
+    @media (max-width: 600px) {
+    transition-delay: 0;
+    
+    }
 }
