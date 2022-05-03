@@ -16,7 +16,7 @@
         --pd-lr: 10vw;
     }
 
-    @media  (max-width:950px) {
+    @media (max-width:950px) {
         --pd-lr: 5vw;
     }
 
@@ -74,6 +74,10 @@ h3 {
 
 p {
     margin-bottom: 8px;
+
+    @media(max-width: 800px) {
+        margin-bottom: 4px;
+    }
 }
 
 a,

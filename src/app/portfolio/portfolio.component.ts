@@ -21,6 +21,7 @@ export class PortfolioComponent implements OnInit {
       'img': 'ringoffire.png',
       'description1': 'The popular drinking game as multi-user-app based on Angular and Firebase.',
       'description2': 'By drawing cards in turns, the players get instruction on who should have a drink.',
+      'description_short': 'Multi-user-app based on Angular and Firebase',
       'path': 'https://ringoffire-5119d.web.app/'
     },
     {
@@ -29,6 +30,7 @@ export class PortfolioComponent implements OnInit {
       'img': 'sharkie.png',
       'description1': 'Object-oriented jump-and-run-game based on JavaScript.',
       'description2': 'Sharkie is a friendly shark, but to survive he must evade or fight his enemies. ',
+      'description_short': 'Jump-and-run-game based on OOP with JavaScript.',
       'path': 'http://sabine-detering.developerakademie.net/Sharkie/index.html'
     },
     {
@@ -37,6 +39,7 @@ export class PortfolioComponent implements OnInit {
       'img': 'pokedex.png',
       'description1': 'Based on Javascript and a RESTful API.',
       'description2': 'The user gets information on selected properties of his favorite (or all) pokémon.',
+      'description_short': 'Based on Javascript and a RESTful API.',
       'path': 'http://sabine-detering.developerakademie.net/pokedex/index.html'
     },
     {
@@ -45,6 +48,7 @@ export class PortfolioComponent implements OnInit {
       'img': 'join.png',
       'description1': 'A Kanban board based on JavaScript and Bootstrap.',
       'description2': 'The board gives an overview over the current tasks in a project by showing the status, assignments and other informations.',
+      'description_short': 'A Kanban board based on JavaScript and Bootstrap.',
       'path': 'http://gruppe-194.developerakademie.net/Join/'
     },
     {
@@ -53,6 +57,7 @@ export class PortfolioComponent implements OnInit {
       'img': 'quiz.png',
       'description1': 'Quiz App based on JavaScript and Bootstrap.',
       'description2': 'Test your knowledge about dogs.',
+      'description_short': 'Quiz App based on JavaScript and Bootstrap.',
       'path': 'http://sabine-detering.developerakademie.net/quiz/index.html'
     },
     {
@@ -61,6 +66,7 @@ export class PortfolioComponent implements OnInit {
       'img': 'tictactoe.png',
       'description1': 'The well-known game based on Javascript.',
       'description2': 'Play with a friend or against the computer on 2 difficulty levels.',
+      'description_short': 'Play alone on 2 difficulty levels or with a friend.',
       'path': 'http://sabine-detering.developerakademie.net/tictactoe/index.html'
     }
   ]

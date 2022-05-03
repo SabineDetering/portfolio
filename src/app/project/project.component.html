@@ -3,8 +3,9 @@
     <div class="project-info" *ngIf="hover">
         <div>
             <h3 class="title">{{ project.name }}</h3>
-            <p>{{ project.description1 }}</p>
-            <p>{{ project.description2 }}</p>
+            <p class="description-desktop">{{ project.description1 }}</p>
+            <p class="description-desktop">{{ project.description2 }}</p>
+            <p class="description-mobile">{{ project.description_short }}</p>
         </div>
         <button  (click)="openLink(project.path)" class="btn-primary">Try</button>
     </div>
