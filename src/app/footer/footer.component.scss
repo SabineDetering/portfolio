@@ -2,24 +2,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media(max-width: 470px) {
+        flex-direction: column;
+        gap:var(--space-xs);
+    }
 
     .logo {
         height: 70px;
-        padding:5px;
+        padding: 5px;
+
         &:hover {
             background-color: var(--grey);
             border-radius: 10px;
+        }
+
+        @media (max-width:800px) {
+            height: 50px;
         }
     }
 
     .social {
         display: flex;
         gap: var(--space-xs);
-        img{
-            &:hover{
-                background-color:var(--secondary);
+
+        img {
+            &:hover {
+                background-color: var(--secondary);
                 border-radius: 10px;
             }
+
+            @media (max-width:800px) {
+                height: 50px;
+            }
+        }
+
+        @media (min-width:470px)and (max-width: 600px) {
+            flex-direction: column;
         }
     }
 
@@ -27,6 +45,10 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        @media(max-width: 470px) {
+           align-items: center;
+           text-align: center;
+        }
     }
 
     span {

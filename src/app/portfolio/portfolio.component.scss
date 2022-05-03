@@ -8,12 +8,20 @@
 .btn-group {
     display: flex;
     justify-content: center;
-    gap: var(--space-s);
+    width: 500px;
+    max-width: 100%;
+    gap: 5%;
+    // gap: var(--space-s);
 
     button {
-        width: 150px;
+        // width: 150px;
+        width: 30%;
         height: 60px;
 
+        @media(max-width: 470px) {
+            height: 50px;
+            font-size: 14px;
+        }
         &:hover {
             &:not(.active) {
                 background: linear-gradient(-45deg, var(--primary), 15%, transparent, 85%,
