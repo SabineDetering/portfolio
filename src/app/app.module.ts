@@ -21,6 +21,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { PrivacyNoticeComponent } from './privacy-notice/privacy-notice.component';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { HttpClientModule } from '@angular/common/http';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     BrowserAnimationsModule,
     TextFieldModule,
-    HttpClientModule
+    HttpClientModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

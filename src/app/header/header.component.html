@@ -1,6 +1,21 @@
 <a href="#home"><img src="assets/img/logo.png" alt=""></a>
-<nav>
-    <a href="#home" routerLinkActive="active">HOME</a>
-    <a href="#portfolio" routerLinkActive="active">PORTFOLIO</a>
-    <a href="#about-me" routerLinkActive="active">ABOUT ME</a>
+<nav class="nav-desktop">
+    <a class="nav-item" href="#home" routerLinkActive="active">HOME</a>
+    <a class="nav-item" href="#portfolio" routerLinkActive="active">PORTFOLIO</a>
+    <a class="nav-item" href="#about-me" routerLinkActive="active">ABOUT ME</a>
 </nav>
+
+
+<input type="checkbox" class="openSidebarMenu nav-mobile" id="openSidebarMenu">
+<label for="openSidebarMenu" class="sidebarIconToggle nav-mobile">
+    <div class="spinner upper"></div>
+    <div class="spinner middle"></div>
+    <div class="spinner lower"></div>
+</label>
+<div id="sidebarMenu" class="nav-mobile">
+    <ul>
+        <li><a class="nav-item" href="#home">HOME</a></li>
+        <li><a class="nav-item" href="#portfolio">PORTFOLIO</a></li>
+        <li><a class="nav-item" href="#about-me">ABOUT ME</a></li>
+    </ul>
+</div>
