@@ -11,22 +11,22 @@ export class AboutMeComponent implements OnInit {
   {
     'img': 'walk.png',
     'title': 'My Journey Began',
-    'description': 'Studying Business Mathematics boosted my talent for structured and analytical thinking. I built a first project with Delphi, solving a problem with Artificiel Intelligence.'
+    'description': 'Studying Business Mathematics boosted my talent for structured and analytical thinking. I coded my first project with Delphi, solving a problem with Artificial Intelligence.'
   },
   {
     'img': 'heart.png',
-    'title': 'My Passion',
-    'description': 'During my career in the banking industry, programming was all about data analyses and predictive modelling. I enjoyed automating processes for more efficiency in modelling and reporting.'
+    'title': 'First Experiences',
+    'description': 'During my career in the banking industry, programming was all about data analyses and predictive modeling. I enjoyed automating processes for more efficiency in modeling and reporting.'
   },
   {
     'img': 'search.png',
     'title': 'My Search',
-    'description': 'Looking for new challenges in software development, I got professional training as Frontend Developer. At Developer Akademie I coded several websites and apps, alone and in a team. '
+    'description': 'Looking for new challenges in software development, I got professional training as a front-end developer. At Developer Akademie, I coded several websites and apps, alone and in teams. '
   },
   {
     'img': 'takeoff.png',
     'title': 'New Challenges',
-    'description': 'Now I am looking for an opportunity as junior developer to build on my experience with JavaScript, HTML/CSS and Angular, and continue learning. '
+    'description': 'Now I am eager to apply my experience with JavaScript, HTML/CSS, and Angular as a junior developer.'
   }
 ]
 

@@ -2,13 +2,13 @@
     <img src="assets/img/profile-pic.jpg" alt="">
     <div class="profile-text">
         <h2>About me.</h2>
-        <p>"I'm a dog enthusiast and frontend developer with a passion for structuring problems and logical
-            approaches."</p>
+        <p>"I'm a dog enthusiast and frontend developer with a passion for structuring problems and logical approaches."
+        </p>
     </div>
 </div>
 <hr>
 <div class="career-step-wrapper">
-    <app-career-step *ngFor="let step of careerSteps;let i=index" [step]="step"
-   data-aos="staggered-slide-left" data-aos-once="true" [style.--animation-delay]="i * 300 + 'ms'"  >
+    <app-career-step *ngFor="let step of careerSteps;let i=index" [step]="step" data-aos="staggered-slide-left"
+        data-aos-once="true" [style.--animation-delay]="i * 300 + 'ms'">
     </app-career-step>
 </div>

@@ -1,5 +1,5 @@
 <div class="contact-wrapper">
-    <h2 class="highlight">Contact me.</h2>
+    <h2 *ngIf="!mailSent" class="highlight">Contact me.</h2>
 
     <p *ngIf="!mailSent">Get in touch via the form below, or by emailing <a
             href="mailto:sabine.detering@web.de">sabine.detering@web.de</a>.
@@ -41,7 +41,7 @@
         </button>
     </form>
 
-    <span *ngIf="mailSent" class="success full-w">
+    <h2 *ngIf="mailSent" class="success full-w">
         Thank you for your message!
-    </span>
+    </h2>
 </div>
