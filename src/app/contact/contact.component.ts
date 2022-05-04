@@ -16,6 +16,11 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  /**
+   * uses sendMail Service to post message 
+   * @param formResult:{name:string, email:string,message:string} - form data 
+   */
   submitForm(formResult) {
     console.log(formResult);
     this.sendMail.send(formResult)
@@ -27,5 +32,13 @@ export class ContactComponent implements OnInit {
           this.mailSent = true;
         }
       });
+  }
+
+
+  /**
+   * setting mailSent to false resets the contact form and shows it again
+   */
+  resetForm() {
+    this.mailSent = false;
   }
 }

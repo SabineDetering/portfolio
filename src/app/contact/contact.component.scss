@@ -1,6 +1,7 @@
 :host {
     display: flex;
     justify-content: center;
+    text-align: center;
 
     .highlight {
         font-size: 64px;
@@ -95,20 +96,24 @@
     input:-webkit-autofill:hover,
     input:-webkit-autofill:focus,
     input:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 30px black inset !important;
-        box-shadow: 0 0 0 30px black inset !important;
+        -webkit-box-shadow: 0 0 0 30px var(--grey) inset !important;
+        box-shadow: 0 0 0 30px var(--grey) inset !important;
         -webkit-text-fill-color: white !important;
     }
 
-    button {
-        width: 150px;
-        height: 60px;
+    .send-btn {
+        padding: 24px 120px;
         align-self: flex-end;
+        text-align: center;
         transition: 0.2s;
 
-        &:hover {
-            box-shadow: inset 0 0 0 2em var(--secondary);
-            transition: 0.2s;
+        @media(min-width:450px) and (max-width:800px) {
+            width: 40%;
+            padding: 24px 0;
+        }
+
+        @media(max-width:451px) {
+            width: 100%;
         }
     }
 }
@@ -120,4 +125,15 @@
 
 .success {
     color: var(--secondary);
+    text-align: center;
+}
+.success-btn {
+    padding: 24px 60px;
+    align-self: flex-end;
+    text-align: center;
+    transition: 0.2s;
+
+    @media (max-width:600px) {      
+        padding: 24px 30px;
+    }
 }

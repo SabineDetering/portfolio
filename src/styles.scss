@@ -19,7 +19,6 @@
     @media (max-width:950px) {
         --pd-lr: 5vw;
     }
-
 }
 
 * {
@@ -30,9 +29,6 @@
 html,
 body {
     height: 100%;
-}
-
-body {
     box-sizing: border-box;
     font-family: 'Inter', Roboto, "Helvetica Neue", sans-serif;
     font-size: 20px;
@@ -48,12 +44,15 @@ h1 {
     @media (min-width:540px) and (max-width: 1200px) {
         font-size: 48px;
     }
+
     @media (min-width:420px) and (max-width: 540px) {
         font-size: 36px;
     }
+
     @media (min-width:360px) and (max-width: 420px) {
         font-size: 32px;
     }
+
     @media(max-width: 360px) {
         font-size: 28px;
     }
@@ -146,19 +145,18 @@ button {
     cursor: pointer;
     transition: 0.2s;
 
-    &:hover {
-        color: black;
-        box-shadow: inset 0 0 0 2em var(--secondary);
-        transition: 0.2s;
-    }
 
     &:disabled {
-        background-color: #99ffeec3;
-        color: var(--lightgrey);
+        border: 2px solid #2dfcd964;
+        color: #2dfcd964;
         cursor: unset;
+    }
 
-        &:hover {
-            box-shadow: unset;
+    &:hover {
+        &:enabled {
+            color: black;
+            box-shadow: inset 0 0 0 2em var(--secondary);
+            transition: 0.2s;
         }
     }
 }

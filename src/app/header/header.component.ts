@@ -12,4 +12,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  /**
+   * executes click function on the checkbox that controls the menu to hide sidebar menu
+   */
+  hideSidebarMenu() {
+    document.getElementById('openSidebarMenu').click();
+  }
+
 }

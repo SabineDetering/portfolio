@@ -1,11 +1,11 @@
 :host {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: right;
     height: calc(100vh - 107px);
 
-    @media(max-width:800px) {
+    @media(max-width:820px) {
         justify-content: center;
         align-items: flex-start;
     }
@@ -51,15 +51,8 @@
         font-size: larger;
         margin-top: var(--space-s);
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
         &:hover {
-            a {
-                color: black;
-            }
+            color: black;
         }
     }
 
@@ -101,7 +94,7 @@
     @media(max-width:420px) and (min-height:700px) {
         line-height: 1.5;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-40%);
 
         button {
             padding: 16px 0px;
@@ -117,12 +110,13 @@
 .laptop {
     min-width: 500px;
     max-width: 40vw;
+    max-height:45vh;
     margin-right: -60px;
-    transform: translateY(20vh);
+    // transform: translateY(20vh);
     object-fit: contain;
 
     @media(min-width:550px) and(max-width:820px) {
-        transform: translateY(50px);
+        // transform: translateY(50px);
         margin-right: 0px;
     }
 
@@ -145,4 +139,7 @@ span {
     bottom: 0px;
     left: 50%;
     transform: translatex(-50%);
+    @media (max-height:550px){
+        display: none;
+    }
 }

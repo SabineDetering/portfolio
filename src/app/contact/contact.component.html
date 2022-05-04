@@ -36,8 +36,7 @@
             </mat-form-field>
         </div>
 
-        <button *ngIf="!mailSent" class="btn-secondary" type="submit"
-            [disabled]="contactForm.touched && !contactForm.valid">
+        <button *ngIf="!mailSent" class="send-btn btn-secondary" type="submit" [disabled]="!contactForm.valid">
             Send
         </button>
     </form>
@@ -46,4 +45,7 @@
     <h2 *ngIf="mailSent" class="success full-w">
         Thank you for your message!
     </h2>
+    <button *ngIf="mailSent" class="success-btn btn-secondary" (click)="resetForm()">
+        Send another message
+    </button>
 </div>
