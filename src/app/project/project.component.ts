@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
 })
 export class ProjectComponent implements OnInit {
   hover: boolean = false;
-  // @Input() index: number;
   @Input() project: any;
   
   

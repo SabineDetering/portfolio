@@ -1,8 +1,9 @@
 <div class="contact-wrapper">
     <h2 *ngIf="!mailSent" class="highlight">Contact me.</h2>
 
-    <p *ngIf="!mailSent">Get in touch via the form below, or by emailing <a
-            href="mailto:sabine.detering@web.de">sabine.detering@web.de</a>.
+    <p *ngIf="!mailSent">
+        Get in touch via the form below, or by emailing
+        <a href="mailto:sabine.detering@web.de">sabine.detering@web.de</a>.
     </p><br>
 
     <form *ngIf="!mailSent" class="contact-form" novalidate (ngSubmit)="submitForm(contactForm.value)"
@@ -41,6 +42,7 @@
         </button>
     </form>
 
+    <!-- success message replaces form -->
     <h2 *ngIf="mailSent" class="success full-w">
         Thank you for your message!
     </h2>

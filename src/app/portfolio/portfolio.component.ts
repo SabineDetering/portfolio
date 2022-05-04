@@ -14,7 +14,6 @@ export class PortfolioComponent implements OnInit {
   ];
 
   public projects = [
-
     {
       'name': 'Ring of Fire',
       'type': 'Angular',
@@ -85,13 +84,22 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+/**
+ * the clicked project type is marked as active, all others as inactive
+ * @param i - index of the type to activate
+ */
   activate(i: number) {
     for (let index = 0; index < this.types.length; index++) {
       this.types[index].active = (index == i);
     }
   }
 
+
+  /**
+   * filters the projects that meet the clicked type
+   * @param i - index of project
+   * @returns boolean - true, if project is of the active type
+   */
   meetsSearchCriteria(i: number) {
     let activeType = this.types.find(type => type.active);
     if (activeType.name == 'All') {
