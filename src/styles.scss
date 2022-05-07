@@ -1,7 +1,7 @@
 :root {
     --primary: #Fa2759;
     --secondary: #2Dfcd8;
-    --grey: #1e1e1e;
+    --grey: #1c1c1c;
     --lightgrey: #8c8c8c;
     --space-xs: 12px;
     --space-s: 24px;
@@ -78,6 +78,15 @@ h3 {
     @media(max-width: 800px) {
         font-size: 20px;
     }
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+
+    // @media(max-width: 800px) {
+    //     font-size: 20px;
+    // }
 }
 
 p {

@@ -9,13 +9,13 @@ export class AboutMeComponent implements OnInit {
 
   public careerSteps: { img: string; title: string; description: string; }[] =[
   {
-    'img': 'walk.png',
-    'title': 'My Journey Began',
+    'img': 'graduation.png',
+    'title': 'Mathematics Graduate',
     'description': 'Studying Business Mathematics boosted my talent for structured and analytical thinking. I coded my first project with Delphi, solving a problem with Artificial Intelligence.'
   },
   {
-    'img': 'heart.png',
-    'title': 'First Experiences',
+    'img': 'bank.png',
+    'title': 'Programming Risk Models for Banks',
     'description': 'During my career in the banking industry, programming was all about data analyses and predictive modeling. I enjoyed automating processes for more efficiency in modeling and reporting.'
   },
   {

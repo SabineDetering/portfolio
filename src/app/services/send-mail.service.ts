@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SendMailService {
 
-  private url = 'http://sabine-detering.developerakademie.net/portfolio/send_mail.php';
+  private url = 'https://sabine-detering.de/send_mail.php';
 
   constructor(private http: HttpClient) {
   }

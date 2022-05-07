@@ -20,7 +20,7 @@ switch($_SERVER['REQUEST_METHOD']){
 
         $recipient = 'sabine.detering@web.de'; //your email address
         $subject = "Contact from portfolio website: $name <$email>";
-        $headers = "From:  noreply@mywebsite.com";
+        $headers = "From:  noreply@sabine-detering.de"; //your website
 
         mail($recipient, $subject, $message, $headers);
         break;

@@ -13,24 +13,24 @@ import { trigger, sequence, query, style, animate, transition } from '@angular/a
         query('.contact-btn', style({ opacity: '0' })),
         sequence([
           query('.highlight',
-            animate('300ms 100ms linear',
+            animate('300ms 200ms linear',
               style({ width: '100%', borderRight: '4px solid white' }))),
           query('.highlight',
-            animate('0ms 10ms ease-in-out',
+            animate('0ms 50ms ease-in-out',
               style({ width: '100%', borderRight: '0px ' }))),
           query('.changecolor',
             animate('5ms 300ms', style({ color: 'var(--primary)' }))),
-          query('.right-from-insert',
-            animate('50ms 50ms',
-              style({ borderLeft: '4px solid white' }))),
+          query('.left-from-insert',
+            animate('50ms 100ms',
+              style({ borderRight: '4px solid white' }))),
           query('.insert',
-            animate('50ms 50ms ease-in-out',
+            animate('100ms 50ms ease-in-out',
               style({ width: '80px', opacity: '0' }))),
           query('.insert',
-            animate('50ms 50ms',
+            animate('50ms 100ms',
               style({ opacity: '1' }))),
           query('.contact-btn',
-            animate('250ms 150ms ease-in-out',
+            animate('500ms 50ms ease-in-out',
               style({ opacity: '1' })))
         ])
       ])
@@ -39,11 +39,15 @@ import { trigger, sequence, query, style, animate, transition } from '@angular/a
       transition(':enter', [
         style({ opacity: '0' }),
         sequence([
-          animate('125ms 1400ms ease-in-out', style({ opacity: '1' })),
-          animate('3s 0s ease-in', style({ opacity: '0' })),
-          animate('3s 0s ease-out', style({ opacity: '1' })),
-          animate('3s 0s ease-in', style({ opacity: '0' })),
-          animate('3s 0s ease-out', style({ opacity: '1' })),
+          animate('125ms 2000ms ease-in-out', style({ opacity: '1' })),
+          animate('1s 0s ease-in', style({ opacity: '0.1' })),
+          animate('1s 0s ease-out', style({ opacity: '1' })),
+          animate('1s 0s ease-in', style({ opacity: '0.1' })),
+          animate('1s 0s ease-out', style({ opacity: '1' })),
+          animate('1s 0s ease-in', style({ opacity: '0.1' })),
+          animate('1s 0s ease-out', style({ opacity: '1' })),
+          animate('1s 0s ease-in', style({ opacity: '0.1' })),
+          animate('1s 0s ease-out', style({ opacity: '1' })),
         ])
       ])
     ])
