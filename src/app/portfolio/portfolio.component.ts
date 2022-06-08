@@ -15,11 +15,20 @@ export class PortfolioComponent implements OnInit {
 
   public projects = [
     {
+      'name': 'Dogschool CRM',
+      'type': 'Angular',
+      'img': 'dogschoolcrm.png',
+      'description1': 'A CRM-app for dogschools based on Angular, Material Design and Firebase.',
+      'description2': 'The app gives an overview of clients, their dogs and trainings.',
+      'description_short': 'CRM-app based on Angular and Material Design',
+      'path': 'https://dogschool-crm.web.app/'
+    },
+    {
       'name': 'Ring of Fire',
       'type': 'Angular',
       'img': 'ringoffire.png',
       'description1': 'The popular drinking game as multi-user-app based on Angular and Firebase.',
-      'description2': 'By drawing cards in turns, the players get instruction on who should have a drink.',
+      'description2': 'By drawing cards in turns, the players get instructions on who should have a drink.',
       'description_short': 'Multi-user-app based on Angular and Firebase',
       'path': 'https://ringoffire-5119d.web.app/'
     },
@@ -59,15 +68,15 @@ export class PortfolioComponent implements OnInit {
       'description_short': 'This page was built with Angular.',
       'path': 'https://sabine-detering.de/index.html'
     },
-    {
-      'name': 'Quiz',
-      'type': 'JavaScript',
-      'img': 'quiz.png',
-      'description1': 'Quiz App based on JavaScript and Bootstrap.',
-      'description2': 'Test your knowledge about dogs.',
-      'description_short': 'Quiz App based on JavaScript and Bootstrap.',
-      'path': 'https://sabine-detering.de/quiz/index.html'
-    },
+    // {
+    //   'name': 'Quiz',
+    //   'type': 'JavaScript',
+    //   'img': 'quiz.png',
+    //   'description1': 'Quiz-App based on JavaScript and Bootstrap.',
+    //   'description2': 'Test your knowledge about dogs.',
+    //   'description_short': 'Quiz App based on JavaScript and Bootstrap.',
+    //   'path': 'https://sabine-detering.de/quiz/index.html'
+    // },
     // {
     //   'name': 'Tic Tac Toe',
     //   'type': 'JavaScript',
@@ -84,10 +93,10 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-/**
- * the clicked project type is marked as active, all others as inactive
- * @param i - index of the type to activate
- */
+  /**
+   * the clicked project type is marked as active, all others as inactive
+   * @param i - index of the type to activate
+   */
   activate(i: number) {
     for (let index = 0; index < this.types.length; index++) {
       this.types[index].active = (index == i);
