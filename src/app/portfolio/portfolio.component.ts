@@ -22,6 +22,14 @@ export class PortfolioComponent implements OnInit {
       'description2': 'The app gives an overview of clients, their dogs and trainings.',
       'description_short': 'CRM-app based on Angular and Material Design',
       'path': 'https://dogschool-crm.web.app/'
+    }, {
+      'name': 'Slack Clone',
+      'type': 'Angular',
+      'img': 'slack.png',
+      'description1': 'A message-app based on Angular, Material Design and Firebase.',
+      'description2': 'Communicate with colleagues or friends in public channels or private chats.',
+      'description_short': 'Message-app based on Angular and Material Design',
+      'path': 'https://slack-clone-asv.web.app/'
     },
     {
       'name': 'Ring of Fire',
@@ -59,15 +67,15 @@ export class PortfolioComponent implements OnInit {
       'description_short': 'A Kanban board based on JavaScript and Bootstrap.',
       'path': 'https://sabine-detering.de/join/index.html'
     },
-    {
-      'name': 'Portfolio',
-      'type': 'Angular',
-      'img': 'portfolio.png',
-      'description1': 'This page was built with Angular.',
-      'description2': 'Get to know me and my projects.',
-      'description_short': 'This page was built with Angular.',
-      'path': 'https://sabine-detering.de/index.html'
-    },
+    // {
+    //   'name': 'Portfolio',
+    //   'type': 'Angular',
+    //   'img': 'portfolio.png',
+    //   'description1': 'This page was built with Angular.',
+    //   'description2': 'Get to know me and my projects.',
+    //   'description_short': 'This page was built with Angular.',
+    //   'path': 'https://sabine-detering.de/index.html'
+    // },
     // {
     //   'name': 'Quiz',
     //   'type': 'JavaScript',
